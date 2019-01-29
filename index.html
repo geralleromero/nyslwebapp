@@ -1,0 +1,488 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <!--<meta name="author" content="Lee Knowlton" />
+  <meta name="description" content="The NYSL Rules" />-->
+  <title>Single Page</title>
+  <link href="style/app_style.css" rel="stylesheet" type="text/css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <!-- Material Design Lite -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.blue_grey-orange.min.css">
+  <script src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+</head>
+
+<body>
+  <ul id="tab-bar" class="btn-group" role="group" aria-label="Basic example">
+    <li>
+      <a href="#index" role="button" class="btn btn-primary btn-lg" aria-pressed="true">Home</a>
+    </li>
+    <li>
+      <a href="#calendar" role="button" class="btn btn-success btn-lg" aria-pressed="true">Calendar</a>
+    </li>
+    <li>
+      <a href="#game_information" role="button" class="btn btn-success btn-lg" aria-pressed="true">Game Information</a>
+    </li>
+  </ul>
+
+  <div id="website">
+
+    <div id="index" class="current fondo">
+      
+      <div class="container">
+        <!--<div class="row justify-content-start">
+          <div class="logo col-3">
+            <p>NSYL</p>
+          </div>
+        </div>-->
+
+        <div class="row">
+          <div class="encabezado">
+            <p>NYSL</p>
+          </div>
+        </div>
+        <!--<div class="row justify-content-center">
+          <nav class="contenido">
+            <a href="calendar.html">Calendar</a>
+            <a href="game_information.html">Location and Time</a>
+          </nav>
+        </div>-->
+      </div>
+    </div>
+
+    <div id="calendar">
+      
+      <div class="container">
+        <div class="row justify-content-end">
+          <div class="col" id="titulo">
+            <p></p>
+          </div>
+          <!--<nav class="col-sm-3" id="nysl">
+            <a href="index.html">NSYL</a>
+          </nav>-->
+        </div>
+        <div id="chat">
+          <a href="#display_message"><img src="style/imagenes/chat1.png" alt="chat_button" height="15%" width="15%"></a>
+        </div>
+        <div class="row justify-content-center">
+          <p class="titulo2">Calendar</p>
+        </div>
+
+        <div class="row seccion" id="">
+          <div class="table-responsive col">
+            <table class="table" id="table">
+              <thead>
+                <tr>
+                  <th colspan="7">SEPTEMBER - Teams</th>
+                </tr>
+              </thead>
+              <tbody class="equipos">
+                <tr>
+                  <td>D</td>
+                  <td>L</td>
+                  <td>M</td>
+                  <td>M</td>
+                  <td>J</td>
+                  <td>V</td>
+                  <td>S</td>
+                </tr>
+                <tr>
+                  <td colspan="6">U3 and U2 / U1 and U4</td>
+                  <td class="table-info">9/01</td>
+                </tr>
+                <tr>
+                  <td colspan="6">U5 and U6 / U6 and U1</td>
+                  <td class="table-info">9/08</td>
+                </tr>
+                <tr>
+                  <td colspan="6">U2 and U4 / U3 and U5</td>
+                  <td class="table-info">9/15</td>
+                </tr>
+                <tr>
+                  <td colspan="6">U1 and U3 / U2 and U6</td>
+                  <td class="table-info">9/22</td>
+                </tr>
+                <tr>
+                  <td colspan="6">U4 and U5</td>
+                  <td class="table-info">9/29</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="row seccion2" id="">
+          <div class="table-responsive col">
+            <table class="table" id="table.">
+              <thead>
+                <tr>
+                  <th colspan="7">OCTOBER - Teams</th>
+                </tr>
+              </thead>
+              <tbody class="equipos">
+                <tr>
+                  <td>D</td>
+                  <td>L</td>
+                  <td>M</td>
+                  <td>M</td>
+                  <td>J</td>
+                  <td>V</td>
+                  <td>S</td>
+                </tr>
+                <tr>
+                  <td colspan="6">U2 and U5 / U1 and U6</td>
+                  <td class="table-info">10/06</td>
+                </tr>
+                <tr>
+                  <td colspan="6">U3 and U4 / U5 and U1</td>
+                  <td class="table-info">10/08</td>
+                </tr>
+                <tr>
+                  <td colspan="6">U6 and U3 / U2 and U4</td>
+                  <td class="table-info">10/20</td>
+                </tr>
+                <tr>
+                  <td colspan="6">U3 and U1 / U5 and U6</td>
+                  <td class="table-info">10/27</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="row tablefoot">
+          <div class="table-responsive col">
+            <table class="table" id="tablefoot">
+              <tbody>
+                <tr>
+                  <td colspan="2">*All games take place on Saturday</td>
+                </tr>
+                <tr>
+                  <td colspan="2"><strong>Facility Type:</strong> Outdoor.</td>
+                </tr>
+                <tr>
+                  <td colspan="2"><strong>Additional Information:</strong> If deemed necessary by NYSL, games may be shortened or cancelled due to extreme weather conditions.</td>
+                </tr>
+                <tr>
+                  <td colspan="2"><strong>Please direct all questions to:</strong> Michael Randall, League Coordinator </td>
+                </tr>
+                <tr>
+                  <td><strong>Phone:</strong>(630) 690-8132</td>
+                  <td><strong>Email:</strong><a href="mailto:michael.randall@chisoccer.org">michael.randall@chisoccer.org</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="game_information">
+      
+      <div class="container">
+        <div class="row justify-content-end">
+          <div class="col" id="titulo">
+            <p></p>
+          </div>
+          <!--<nav class="col-sm-3" id="nysl">
+            <a href="index.html">NSYL</a>
+          </nav>-->
+        </div>
+        <div id="chat">
+          <a href="#display_message"><img src="style/imagenes/chat1.png" alt="chat_button" height="15%" width="15%"></a>
+        </div>
+        <div class="row justify-content-center location">
+          <p class="titulo2">Location and Time</p>
+        </div>
+        <div class="row infotable">
+          <div class="table-responsive col">
+            <table class="table" id="infotable">
+              <tr>
+                <th>SEPTEMBER</th>
+                <th>Teams</th>
+                <th>Location</th>
+                <th>Times</th>
+              </tr>
+              <tr>
+                <td rowspan="2">9/01</td>
+                <td>U1 and U4</td>
+                <td>AJ Katzenmaier</td>
+                <td>9:30 a.m.</td>
+              </tr>
+              <tr>
+                <td>U3 and U2</td>
+                <td>Greenbay</td>
+                <td>1:00 p.m.</td>
+              </tr>
+              <tr>
+                <td rowspan="2">9/08</td>
+                <td>U5 and U6</td>
+                <td>Howard A Yeager</td>
+                <td>9:30 a.m.</td>
+              </tr>
+              <tr>
+                <td>U6 and U1</td>
+                <td>Marjorie P Hart</td>
+                <td>1:00 p.m.</td>
+              <tr>
+                <td rowspan="2">9/15</td>
+                <td>U2 and U4</td>
+                <td>North</td>
+                <td>9:30 a.m.</td>
+              </tr>
+              <tr>
+                <td>U3 and U5</td>
+                <td>AJ Katzenmaier</td>
+                <td>1:00 p.m.</td>
+              <tr>
+                <td rowspan="2">9/22</td>
+                <td>U1 and U3</td>
+                <td>South</td>
+                <td>9:30 a.m.</td>
+              </tr>
+              <tr>
+                <td>U2 and U6</td>
+                <td>Howard A Yeager</td>
+                <td>1:00 p.m.</td>
+              <tr>
+                <td>9/29</td>
+                <td>U4 and U5</td>
+                <td>Greenbay</td>
+                <td>9:30 a.m.</td>
+              </tr>
+              <tr>
+                <th>OCTOBER</th>
+                <th>Teams</th>
+                <th>Location</th>
+                <th>Times</th>
+              </tr>
+              <tr>
+                <td rowspan="2">10/06</td>
+                <td>U2 and U5</td>
+                <td>Marjorie P Hart</td>
+                <td>9:30 a.m.</td>
+              </tr>
+              <tr>
+                <td>U1 and U6</td>
+                <td>South</td>
+                <td>1:00 p.m.</td>
+              </tr>
+              <tr>
+                <td rowspan="2">10/08</td>
+                <td>U3 and U4</td>
+                <td>Howard A Yeager</td>
+                <td>9:30 a.m.</td>
+              </tr>
+              <tr>
+                <td>U5 and U1</td>
+                <td>Greenbay</td>
+                <td>1:00 p.m.</td>
+              <tr>
+                <td rowspan="2">10/20</td>
+                <td>U6 and U3</td>
+                <td>North</td>
+                <td>9:30 a.m.</td>
+              </tr>
+              <tr>
+                <td>U2 and U4</td>
+                <td>Marjorie P Hart</td>
+                <td>1:00 p.m.</td>
+              <tr>
+                <td rowspan="2">10/27</td>
+                <td>U3 and U1</td>
+                <td>AJ Katzenmaier</td>
+                <td>9:30 a.m.</td>
+              </tr>
+              <tr>
+                <td>U5 and U6</td>
+                <td>Howard A Yeager</td>
+                <td>1:00 p.m.</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="row">
+          <div class="table-responsive col">
+            <table class="table" id="infotable2">
+              <tbody>
+                <tr>
+                  <td colspan="2">*All games take place on Saturday</td>
+                </tr>
+                <tr>
+                  <td colspan="2"><strong>Facility Type:</strong> Outdoor.</td>
+                </tr>
+                <tr>
+                  <td colspan="2"><strong>Additional Information:</strong> If deemed necessary by NYSL, games may be shortened or cancelled due to extreme weather conditions.</td>
+                </tr>
+                <tr>
+                  <td colspan="2"><strong>Please direct all questions to:</strong> Michael Randall, League Coordinator </td>
+                </tr>
+                <tr>
+                  <td><strong>Phone:</strong>(630) 690-8132</td>
+                  <td><strong>Email:</strong><a href="mailto:michael.randall@chisoccer.org">michael.randall@chisoccer.org</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="display_message" class="fondochat">
+
+      <section id="page-splash" style="">
+        <!--Area de inicio de sesion, se suprime el titulo Database Web Quickstar-->
+        <div>
+          <button id="sign-in-button" class="mdl-button--raised mdl-button mdl-js-button mdl-js-ripple-effect" data-upgraded=",MaterialButton,MaterialRipple"><i class="material-icons">account_circle</i> Sign in<span class="mdl-button__ripple-container"><span class="mdl-ripple is-animating" style="width: 440.427px; height: 440.427px; transform: translate(-50%, -50%) translate(176px, 12px);"></span></span></button>
+        </div>
+      </section>
+      <!--fin de area de inicio de sesion-->
+
+      <!--<div class="row justify-content-start">
+        <div class="logochat">
+          <img src="style/imagenes/Soccer_icon.png" height='50' width='50' alt='logo' class="logochat">
+        </div>
+      </div>-->
+      
+      <div class="row justify-content-start">
+        <div class="col" id="titulo">
+          <p>Live Chat</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <ul class="list-group col" id="gamelist">
+            <li onclick="getGameId(event)" class="list-group-item" id="game_1">U1 and U4 9/01</li>
+            <li onclick="getGameId(event)" class="list-group-item" id="game_2">U3 and U2 9/01</li>
+            <li onclick="getGameId(event)" class="list-group-item" id="game_3">U5 and U6 9/08</li>
+            <li onclick="getGameId(event)" class="list-group-item" id="game_4">U6 and U1 9/08</li>
+            <li onclick="getGameId(event)" class="list-group-item" id="game_5">U2 and U4 9/15</li>
+            <li onclick="getGameId(event)" class="list-group-item" id="game_6">U3 and U5 9/15</li>
+            <li onclick="getGameId(event)" class="list-group-item" id="game_7">U1 and U3 9/22</li>
+            <li onclick="getGameId(event)" class="list-group-item" id="game_8">U2 and U6 9/22</li>
+            <li onclick="getGameId(event)" class="list-group-item" id="game_9">U4 and U5 9/29</li>
+            <li onclick="getGameId(event)" class="list-group-item" id="game_10">U2 and U5 10/06</li>
+            <li onclick="getGameId(event)" class="list-group-item" id="game_11">U1 and U6 10/06</li>
+            <li onclick="getGameId(event)" class="list-group-item" id="game_12">U3 and U4 10/08</li>
+            <li onclick="getGameId(event)" class="list-group-item" id="game_13">U5 and U1 10/08</li>
+            <li onclick="getGameId(event)" class="list-group-item" id="game_14">U6 and U3 10/20</li>
+            <li onclick="getGameId(event)" class="list-group-item" id="game_15">U2 and U4 10/20</li>
+            <li onclick="getGameId(event)" class="list-group-item" id="game_16">U3 and U1 10/27</li>
+            <li onclick="getGameId(event)" class="list-group-item" id="game_17">U5 and U6 10/27</li>
+          </ul>
+
+        </div>
+        <div class="column">
+          <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
+            <!-- Header section containing logo and menu -->
+
+            <header class="header mdl-layout__header mdl-color-text--white mdl-color--light-green-700">
+              <div class="mdl-layout__header-row titlebar">
+                <button id="sign-out-button" class="mdl-button--raised mdl-button mdl-js-button mdl-js-ripple-effect"><i class="material-icons">account_circle</i>Sign out</button>
+              </div>
+
+              <!-- Navigation Bar -->
+
+              <div class="tab mdl-layout__header-row mdl-color--light-green-600">
+                <div class="mdl-tab">
+                  <div id="menu-recent" class="mdl-layout__tab is-active mdl-button mdl-js-button mdl-js-ripple-effect">
+                    <i class="material-icons">new_releases</i> Recent
+                  </div>
+                  <div id="menu-my-posts" class="mdl-layout__tab mdl-button mdl-js-button mdl-js-ripple-effect">
+                    <i class="material-icons">home</i> My posts
+                  </div>
+                  <div id="menu-my-top-posts" class="mdl-layout__tab mdl-button mdl-js-button mdl-js-ripple-effect">
+                <i class="material-icons">trending_up</i> My top posts
+              </div>
+                  <button class="mdl-button mdl-js-button mdl-button--fab mdl-color--amber-400 mdl-shadow--4dp mdl-js-ripple-effect" id="add">
+                    <i class="material-icons">mode_edit</i>
+                  </button>
+                </div>
+              </div>
+            </header>
+
+            <main class="mdl-layout__content mdl-color--grey-100">
+
+              <!-- Show the add post form -->
+
+              <section class="mdl-grid content" id="add-post" style="display:none">
+                <div class="mdl-cell mdl-cell--12-col mdl-grid">
+
+                  <!-- Card containing the inputs to add a new messages -->
+
+                  <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet
+                  mdl-cell--6-col-desktop">
+
+                    <div class="mdl-card__title mdl-color--light-blue-600 mdl-color-text--white">
+                      <h2 class="mdl-card__title-text">New Post</h2>
+                    </div>
+
+                    <div class="mdl-card__supporting-text mdl-color-text--grey-600">
+                      <form id="message-form" action="#">
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                          <input class="mdl-textfield__input" type="text" id="new-post-title">
+                          <label class="mdl-textfield__label" for="new-post-title">Post title...</label>
+                        </div>
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                          <textarea class="mdl-textfield__input" rows="3" id="new-post-message"></textarea>
+                          <label class="mdl-textfield__label" for="new-post-message">Post message...</label>
+                        </div>
+                        <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Add post</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <!-- Show a list of recent posts -->
+
+              <section class="mdl-grid content" id="recent-posts-list" style="display:none">
+                <div class="posts-container mdl-cell mdl-cell--12-col mdl-grid">
+                </div>
+              </section>
+
+              <!-- Show the list of user's posts -->
+
+              <section class="mdl-grid content" id="user-posts-list" style="display:none">
+                <div class="posts-container mdl-cell mdl-cell--12-col mdl-grid">
+                </div>
+              </section>
+
+              <!-- Show the list of top user's posts -->
+
+              <section class="mdl-grid content" id="top-user-posts-list" style="display:none">
+                <div class="posts-container mdl-cell mdl-cell--12-col mdl-grid">
+                </div>
+              </section>
+            </main>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Import and configure the Firebase SDK -->
+
+  <!-- These scripts are made available when the app is served or deployed on Firebase Hosting -->
+
+  <!-- If you do not serve/host your project using Firebase Hosting see https://firebase.google.com/docs/web/setup -->
+
+  <script src="/__/firebase/5.7.0/firebase-app.js"></script>
+  <script src="/__/firebase/5.7.0/firebase-auth.js"></script>
+  <script src="/__/firebase/5.7.0/firebase-database.js"></script>
+  <script src="/__/firebase/init.js"></script>
+
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="scripts/single_page.js"></script>
+  <script src="scripts/main.js"></script>
+
+</body>
+
+</html>
